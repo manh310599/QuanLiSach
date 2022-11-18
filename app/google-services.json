@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "552145187667",
+    "firebase_url": "https://doanjava-8a230-default-rtdb.firebaseio.com",
+    "project_id": "doanjava-8a230",
+    "storage_bucket": "doanjava-8a230.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:552145187667:android:349b02f7cafe60207a27a6",
+        "android_client_info": {
+          "package_name": "com.example.quanlisach"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "552145187667-hd1p9kl0rdu4vc08t2u98n7vr0e8aro0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgHnJDSkNZf5uYLo6eE7Umgfs9G0QCaqA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "552145187667-hd1p9kl0rdu4vc08t2u98n7vr0e8aro0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="UselessParent"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logo1"
+            android:contentDescription="@string/todo">
+
+        </ImageView>
+
+        <EditText
+            android:id="@+id/textGmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="15"
+            android:hint="@string/gmail"
+            android:textColorHint="#78909C"
+
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="TextFields" />
+
+
+
+
+
+
+
+            <Button
+                android:id="@+id/btnXacNhan"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custum_button"
+                android:text="Xác nhận"
+                android:textColor="@color/white"
+                android:minWidth="130dp"
+                android:layout_marginBottom="10dp"
+                style="?android:attr/buttonBarButtonStyle"
+                tools:ignore="HardcodedText"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

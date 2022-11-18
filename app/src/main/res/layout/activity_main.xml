@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="UselessParent"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logo1"
+            android:contentDescription="@string/todo">
+
+        </ImageView>
+
+        <EditText
+            android:id="@+id/textGmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="15"
+            android:hint="@string/gmail"
+            android:textColorHint="#78909C"
+
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="TextFields" />
+
+        <EditText
+            android:id="@+id/textPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:autofillHints=""
+            android:ems="15"
+            android:hint="@string/m_t_kh_u"
+            android:inputType="textPassword"
+            android:textColorHint="#78909C"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btnDangNhap"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custum_button"
+                android:minWidth="130dp"
+                android:text="Đăng nhập"
+
+                android:textColor="@color/white"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/BtnDangKy"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custum_button1"
+                android:minWidth="130dp"
+                android:text="Đăng Ký"
+                android:textColor="@color/white"
+                android:layout_marginEnd="25dp"
+                tools:ignore="HardcodedText" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/ForgotPass"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:linksClickable="true"
+            android:text="@string/qu_n_m_t_kh_u"
+            android:textColor="#2621AA"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

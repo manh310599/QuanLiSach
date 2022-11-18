@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:layout_gravity="center_vertical"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/img_book1"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:src="@drawable/no_image" />
+
+        <Button
+            android:id="@+id/ChonHinh"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_book1"
+
+            android:layout_marginTop="0dp"
+            android:background="@color/red"
+            android:padding="10dp"
+            android:text="Chọn Hình"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Tên Sách: "
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_weight="0.3"
+            android:layout_marginTop="5dp"
+            />
+        <EditText
+            android:id="@+id/NameBook"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:hint="Nhập vào tên sách"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/TenTacGia0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Tên tác giả: "
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_weight="0.4"
+            android:layout_marginTop="5dp"
+            />
+        <EditText
+            android:id="@+id/TenTacGia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:hint="Nhập vào tên tác giả"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Giá sách: "
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_weight="0.3"
+            android:layout_marginTop="5dp"
+            />
+        <EditText
+            android:id="@+id/GiaSach"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:hint="Nhập vào giá sách"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            android:inputType="number"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Ngôn ngữ: "
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_weight="0.3"
+            android:layout_marginTop="5dp"
+            />
+        <EditText
+            android:id="@+id/NgonNgu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:hint="Nhập vào ngôn ngữ sách"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="SÓ lượng: "
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_weight="0.3"
+            android:layout_marginTop="5dp"
+            />
+        <EditText
+            android:id="@+id/SoLuong"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:hint="Nhập vào số lượng sách"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="5dp"
+            android:inputType="number"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/submic"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <Button
+            android:id="@+id/Luu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custum_button1"
+            android:padding="10dp"
+            android:text="Lưu"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/Close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/custum_button"
+            android:padding="10dp"
+            android:text="Thoát"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</LinearLayout>

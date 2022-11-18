@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="UselessParent"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logo1"
+            android:contentDescription="@string/todo">
+
+        </ImageView>
+
+        <EditText
+            android:id="@+id/textGmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="15"
+            android:hint="@string/gmail"
+            android:textColorHint="#78909C"
+
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="TextFields" />
+
+        <EditText
+            android:id="@+id/textPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:autofillHints=""
+            android:ems="15"
+            android:hint="@string/m_t_kh_u"
+            android:inputType="textPassword"
+            android:textColorHint="#78909C"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/textPassAganim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:autofillHints=""
+            android:ems="15"
+            android:hint="@string/nh_p_l_i_m_t_kh_u"
+            android:inputType="textPassword"
+            android:textColorHint="#78909C"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="10"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/BtnDangKy"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="269dp"
+                android:layout_height="wrap_content"
+               android:layout_gravity="center"
+                android:background="@drawable/custum_button1"
+                android:minWidth="130dp"
+                android:text="Đăng Ký"
+                android:textColor="@color/white"
+                tools:ignore="HardcodedText"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

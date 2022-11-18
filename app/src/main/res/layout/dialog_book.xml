@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:layout_gravity="center_vertical"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/img_book"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:id="@+id/like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_alignRight="@id/img_book"
+            android:layout_marginRight="10dp"/>
+
+        <ImageButton
+            android:id="@+id/heart"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_toLeftOf="@id/like"
+            android:src="@drawable/heart"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/NameBook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tên Sách: "
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:id="@+id/TacGia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tên tác giả: "
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:id="@+id/Gia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Giá sách: "
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:id="@+id/Language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ngôn ngữ: "
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/Seller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Người bán: "
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/Con"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Số lượng còn: "
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"/>
+
+    <EditText
+        android:layout_weight="0.5"
+        android:id="@+id/SoLuong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_marginTop="5dp"
+        android:hint="Nhập vào số lượng"
+        />
+
+    <TextView
+        android:id="@+id/TongTien"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+
+        android:layout_weight="0.5"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/submic"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <Button
+            android:id="@+id/DatHang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đặt hàng"
+            android:textColor="@color/white"
+            android:background="@drawable/custum_button1"
+            android:padding="20dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/Close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/custum_button"
+            android:padding="20dp"
+            android:text="Thoát"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</LinearLayout>

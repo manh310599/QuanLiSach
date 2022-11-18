@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:layout_gravity="center_vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:text="Giá sách: " />
+
+        <EditText
+            android:inputType="number"
+            android:id="@+id/GiaSach"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight=".7"
+            android:imeOptions="actionDone"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:text="Tên sách:" />
+
+        <EditText
+
+            android:id="@+id/TenSach"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight=".7"
+            android:imeOptions="actionDone"
+
+            android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight=".3"
+            android:text="Số lượng còn:" />
+
+        <EditText
+            android:inputType="number"
+            android:id="@+id/SoLuongCon"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight=".7"
+            android:imeOptions="actionDone"
+
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ImgEdit"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"/>
+    <Button
+        android:id="@+id/choiceImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custum_button"
+        android:text="Chọn hình"
+        android:textColor="@color/white"
+        android:padding="15dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/custom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/custum_button"
+            android:padding="15dp"
+            android:text="Lưu lại"
+android:textSize="20dp"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/Close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:textSize="20dp"
+            android:background="@drawable/custum_button1"
+            android:padding="15dp"
+            android:text="Thoát"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>
